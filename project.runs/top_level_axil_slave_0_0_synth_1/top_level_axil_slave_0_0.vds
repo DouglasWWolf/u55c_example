@@ -1,0 +1,248 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr 17 11:17:37 2025
+# Process ID         : 1181419
+# Current directory  : /home/wolf/fpga/u55c_pcie_template/project.runs/top_level_axil_slave_0_0_synth_1
+# Command line       : vivado -log top_level_axil_slave_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_axil_slave_0_0.tcl
+# Log file           : /home/wolf/fpga/u55c_pcie_template/project.runs/top_level_axil_slave_0_0_synth_1/top_level_axil_slave_0_0.vds
+# Journal file       : /home/wolf/fpga/u55c_pcie_template/project.runs/top_level_axil_slave_0_0_synth_1/vivado.jou
+# Running On         : wolf-super-server
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.6 LTS
+# Processor Detail   : Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+# CPU Frequency      : 1200.000 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 261390 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 263537 MB
+# Available Virtual  : 243436 MB
+#-----------------------------------------------------------
+source top_level_axil_slave_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1486.809 ; gain = 9.930 ; free physical = 94728 ; free virtual = 230537
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top top_level_axil_slave_0_0 -part xcu55c-fsvh2892-2L-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu55c'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu55c'
+INFO: [Device 21-403] Loading part xcu55c-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1181754
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3167.621 ; gain = 268.859 ; free physical = 87052 ; free virtual = 222863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level_axil_slave_0_0' [/home/wolf/fpga/u55c_pcie_template/project.gen/sources_1/bd/top_level/ip/top_level_axil_slave_0_0/synth/top_level_axil_slave_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axil_slave' [/home/wolf/fpga/u55c_pcie_template/src/axil_slave.v:18]
+	Parameter AW bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi4_lite_slave' [/home/wolf/fpga/u55c_pcie_template/src/common/axi4_lite_slave.v:12]
+	Parameter ADDR_MASK bound to: 255 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_lite_slave' (0#1) [/home/wolf/fpga/u55c_pcie_template/src/common/axi4_lite_slave.v:12]
+WARNING: [Synth 8-689] width (8) of port connection 'AXI_AWADDR' does not match port width (32) of module 'axi4_lite_slave' [/home/wolf/fpga/u55c_pcie_template/src/axil_slave.v:182]
+WARNING: [Synth 8-689] width (8) of port connection 'AXI_ARADDR' does not match port width (32) of module 'axi4_lite_slave' [/home/wolf/fpga/u55c_pcie_template/src/axil_slave.v:197]
+WARNING: [Synth 8-7023] instance 'i_axi4lite_slave' of module 'axi4_lite_slave' has 31 connections declared, but only 30 given [/home/wolf/fpga/u55c_pcie_template/src/axil_slave.v:176]
+INFO: [Synth 8-6155] done synthesizing module 'axil_slave' (0#1) [/home/wolf/fpga/u55c_pcie_template/src/axil_slave.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_axil_slave_0_0' (0#1) [/home/wolf/fpga/u55c_pcie_template/project.gen/sources_1/bd/top_level/ip/top_level_axil_slave_0_0/synth/top_level_axil_slave_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3245.559 ; gain = 346.797 ; free physical = 86983 ; free virtual = 222794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3257.434 ; gain = 358.672 ; free physical = 86975 ; free virtual = 222786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3257.434 ; gain = 358.672 ; free physical = 86975 ; free virtual = 222786
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3257.434 ; gain = 0.000 ; free physical = 86973 ; free virtual = 222784
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3373.453 ; gain = 0.000 ; free physical = 86874 ; free virtual = 222689
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3395.266 ; gain = 21.812 ; free physical = 86871 ; free virtual = 222687
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3395.266 ; gain = 496.504 ; free physical = 86685 ; free virtual = 222500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu55c-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3403.270 ; gain = 504.508 ; free physical = 86685 ; free virtual = 222500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3403.270 ; gain = 504.508 ; free physical = 86685 ; free virtual = 222499
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3403.270 ; gain = 504.508 ; free physical = 86701 ; free virtual = 222517
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 7     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 28    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/i_axi4lite_slave/ashi_raddr_reg' and it is trimmed from '32' to '8' bits. [/home/wolf/fpga/u55c_pcie_template/src/common/axi4_lite_slave.v:79]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3403.270 ; gain = 504.508 ; free physical = 86540 ; free virtual = 222356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3834.656 ; gain = 935.895 ; free physical = 85263 ; free virtual = 221078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3834.656 ; gain = 935.895 ; free physical = 85262 ; free virtual = 221078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3863.703 ; gain = 964.941 ; free physical = 85234 ; free virtual = 221049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 4006.516 ; gain = 1107.754 ; free physical = 85174 ; free virtual = 220993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 4006.516 ; gain = 1107.754 ; free physical = 85174 ; free virtual = 220993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 4006.516 ; gain = 1107.754 ; free physical = 85174 ; free virtual = 220993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 4006.516 ; gain = 1107.754 ; free physical = 85174 ; free virtual = 220993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 4006.516 ; gain = 1107.754 ; free physical = 85174 ; free virtual = 220993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 4006.516 ; gain = 1107.754 ; free physical = 85174 ; free virtual = 220993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     4|
+|2     |LUT1   |     1|
+|3     |LUT2   |    67|
+|4     |LUT3   |     1|
+|5     |LUT4   |    42|
+|6     |LUT5   |    38|
+|7     |LUT6   |    11|
+|8     |FDRE   |   149|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 4006.516 ; gain = 1107.754 ; free physical = 85174 ; free virtual = 220993
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 4006.516 ; gain = 969.922 ; free physical = 85173 ; free virtual = 220992
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 4006.516 ; gain = 1107.754 ; free physical = 85173 ; free virtual = 220992
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4006.516 ; gain = 0.000 ; free physical = 85332 ; free virtual = 221150
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4034.805 ; gain = 0.000 ; free physical = 85283 ; free virtual = 221101
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a26e25a4
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:41 . Memory (MB): peak = 4034.805 ; gain = 2503.605 ; free physical = 85278 ; free virtual = 221096
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2966.837; main = 2966.837; forked = 195.661
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4569.047; main = 4034.809; forked = 914.840
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4058.816 ; gain = 0.000 ; free physical = 85268 ; free virtual = 221091
+INFO: [Common 17-1381] The checkpoint '/home/wolf/fpga/u55c_pcie_template/project.runs/top_level_axil_slave_0_0_synth_1/top_level_axil_slave_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_level_axil_slave_0_0_utilization_synth.rpt -pb top_level_axil_slave_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 11:18:30 2025...

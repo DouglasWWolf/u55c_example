@@ -1,0 +1,136 @@
+-------------------------------------
+| Tool Version : Vivado v.2024.2
+| Date         : Thu Apr 17 11:26:54 2025
+| Host         : wolf-super-server
+| Design       : design_1
+| Device       : xcu55c-fsvh2892-2L-E-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 15
+	Number of BUFGCE: 0
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 15
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+	Running suboptimal placement checker for 15 BUFG_GT clocks (and their loads)...
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+	Running suboptimal placement checker for 10 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+Pre-CRP Checker took 0 secs
+
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_USERCLK
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	initial rect ((4, 2), (7, 3))
+
+Clock 2: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_CORECLK
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	Clock regions with locked loads: X7Y3 
+	initial rect ((5, 3), (7, 3))
+
+Clock 3: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/pclk
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	Clock regions with locked loads: X7Y2 X7Y3 
+	initial rect ((6, 2), (7, 3))
+
+Clock 4: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/pclk2
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	Clock regions with locked loads: X7Y3 
+	initial rect ((6, 3), (7, 3))
+
+Clock 5: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/sys_clk_bufg
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	Clock regions with locked loads: X7Y2 X7Y3 
+	initial rect ((6, 2), (7, 3))
+
+Clock 6: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/top_level_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.top_level_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X7Y2
+	initial rect ((7, 2), (7, 2))
+
+Clock 7: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/top_level_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.top_level_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X7Y2
+	initial rect ((7, 2), (7, 2))
+
+Clock 8: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/top_level_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.top_level_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X7Y2
+	initial rect ((7, 2), (7, 2))
+
+Clock 9: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/top_level_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.top_level_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X7Y2
+	initial rect ((7, 2), (7, 2))
+
+Clock 10: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/top_level_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.top_level_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[4].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	initial rect ((7, 3), (7, 3))
+
+Clock 11: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/top_level_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.top_level_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[5].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	initial rect ((6, 3), (7, 3))
+
+Clock 12: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/top_level_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.top_level_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[6].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	initial rect ((6, 3), (7, 3))
+
+Clock 13: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/top_level_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.top_level_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	initial rect ((6, 3), (7, 3))
+
+Clock 14: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_INTCLK
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	initial rect ((7, 3), (7, 3))
+
+Clock 15: top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_MCAPCLK
+	Clock source type: BUFG_GT
+	Clock source region: X7Y3
+	Clock regions with locked loads: X7Y3 
+	initial rect ((7, 3), (7, 3))
+
+
+
+*****************
+User Constraints:
+*****************
+The following 4 clock nets belong to CLOCK_DELAY_GROUP top_level_i_pcie_bridge_pcie_bridge_inst_pcie4c_ip_i_inst_top_level_xdma_0_0_pcie4c_ip_group_i0:
+	top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_USERCLK
+	top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_CORECLK
+	top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/pclk
+	top_level_i/pcie_bridge/pcie_bridge/inst/pcie4c_ip_i/inst/top_level_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/pclk2
+
+
+

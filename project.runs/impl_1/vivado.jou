@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr 17 11:24:28 2025
+# Process ID         : 1183914
+# Current directory  : /home/wolf/fpga/u55c_pcie_template/project.runs/impl_1
+# Command line       : vivado -log top_level_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_level_wrapper.tcl -notrace
+# Log file           : /home/wolf/fpga/u55c_pcie_template/project.runs/impl_1/top_level_wrapper.vdi
+# Journal file       : /home/wolf/fpga/u55c_pcie_template/project.runs/impl_1/vivado.jou
+# Running On         : wolf-super-server
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.6 LTS
+# Processor Detail   : Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+# CPU Frequency      : 900.000 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 261390 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 263537 MB
+# Available Virtual  : 249026 MB
+#-----------------------------------------------------------
+source top_level_wrapper.tcl -notrace
