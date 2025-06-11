@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-331,-428",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port pcie0_refclk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port pcie_mgt -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD -left
+preplace port port-id_pcie_perst_l -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace portBus hbm_cattrip -pg 1 -lvl 4 -x 840 -y 340 -defaultsOSRD
+preplace inst pcie_bridge -pg 1 -lvl 1 -x 150 -y 140 -swap {5 1 2 3 4 0 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46} -defaultsOSRD -pinDir pcie_mgt_0 left -pinY pcie_mgt_0 40L -pinDir pcie_refclk left -pinY pcie_refclk 20L -pinDir M_AXI_B right -pinY M_AXI_B 20R -pinDir pcie_perst left -pinY pcie_perst 60L -pinDir axi_aclk right -pinY axi_aclk 40R -pinDir axi_aresetn right -pinY axi_aresetn 60R
+preplace inst smartconnect -pg 1 -lvl 2 -x 440 -y 40 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 58 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 38 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79} -defaultsOSRD -pinDir S00_AXI left -pinY S00_AXI 120L -pinDir M00_AXI right -pinY M00_AXI 160R -pinDir M01_AXI right -pinY M01_AXI 20R -pinDir aclk left -pinY aclk 140L -pinDir aresetn left -pinY aresetn 160L
+preplace inst gnd -pg 1 -lvl 3 -x 710 -y 320 -defaultsOSRD -pinBusDir dout right -pinBusY dout 20R
+preplace inst axil_slave -pg 1 -lvl 3 -x 710 -y 180 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 20L -pinDir clk left -pinY clk 40L -pinDir resetn left -pinY resetn 60L
+preplace inst axi_revision -pg 1 -lvl 3 -x 710 -y 40 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 20L -pinDir AXI_ACLK left -pinY AXI_ACLK 40L -pinDir AXI_ARESETN left -pinY AXI_ARESETN 60L
+preplace netloc gnd_dout 1 3 1 NJ 340
+preplace netloc pcie_bridge_0_axi_aclk 1 1 2 300 260 580J
+preplace netloc pcie_bridge_0_axi_aresetn 1 1 2 280 280 600J
+preplace netloc sys_rst_n_0_1 1 0 1 NJ 200
+preplace netloc CLK_IN_D_0_1 1 0 1 NJ 160
+preplace netloc pcie_bridge_0_M_AXI_B 1 1 1 N 160
+preplace netloc smartconnect_M00_AXI 1 2 1 N 200
+preplace netloc smartconnect_M01_AXI 1 2 1 N 60
+preplace netloc xdma_0_pcie_mgt 1 0 1 NJ 180
+levelinfo -pg 1 0 150 440 710 840
+pagesize -pg 1 -db -bbox -sgen -140 0 1010 400
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-214,-91",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port SYSCLK2 -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port port-id_QSFP28_0_ACTIVITY_LED -pg 1 -lvl 4 -x 720 -y 80 -defaultsOSRD
+preplace port port-id_HBM_CATTRIP_LS -pg 1 -lvl 4 -x 720 -y 60 -defaultsOSRD
+preplace inst blinky -pg 1 -lvl 3 -x 600 -y 70 -defaultsOSRD
+preplace inst clock_buffer -pg 1 -lvl 2 -x 360 -y 70 -defaultsOSRD
+preplace inst system_ila -pg 1 -lvl 1 -x 120 -y -210 -defaultsOSRD
+preplace netloc blinky_cattrip 1 3 1 NJ 60
+preplace netloc blinky_led 1 3 1 NJ 80
+preplace netloc util_ds_buf_1_IBUF_OUT 1 2 1 NJ 70
+preplace netloc SYSCLK2_1 1 0 2 NJ 70 N
+levelinfo -pg 1 0 120 360 600 720
+pagesize -pg 1 -db -bbox -sgen -120 -290 950 270
+"
+}
+{
+   "da_axi4_cnt":"1"
+}

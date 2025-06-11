@@ -1,0 +1,26 @@
+export project=project
+export folder=.
+
+if [ -d ${project}.runs ]; then
+    echo "Refused!  This project is in a built state!" 1>&2
+    exit 1
+fi
+
+update_git_hash_vh --hash 0
+update_timestamp_vh 20000101_000000
+
+rm -rf ${project}.hw/webtalk/*
+rm -rf ${project}.hw/webtalk/\.x*
+
+git add ${folder}/${project}.gen
+git add ${folder}/${project}.hw
+git add ${folder}/${project}.ip_user_files
+git add ${folder}/${project}.sim
+git add ${folder}/${project}.srcs
+git add ${folder}/${project}.xpr
+
+git add pre_build.sh post_build.sh release_history.txt
+git add src xdc grab.sh runtime README.md push
+
+git commit -m "No commit message"
+repo push origin main
